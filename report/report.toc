@@ -1,6 +1,8 @@
 \select@language {polish}
-\contentsline {chapter}{\numberline {1}Wprowadzenie i celem projektu}{1}
-\contentsline {chapter}{\numberline {2}Koncepcja 'Social force'}{2}
-\contentsline {chapter}{\numberline {3}Formulacja modelu 'Social force'}{3}
-\contentsline {chapter}{\numberline {4}Symulacje na komputerze}{4}
-\contentsline {chapter}{\numberline {5}Podsumowanie}{5}
+\contentsline {chapter}{\numberline {1}Wprowadzenie i celem projektu}{2}
+\contentsline {chapter}{\numberline {2}Koncepcja 'Social force'}{3}
+\contentsline {chapter}{\numberline {3}Formulacja modelu 'Social force'}{4}
+\contentsline {section}{\numberline {3.1}Zbuduj og\IeC {\'o}lne r\IeC {\'o}wnanie}{4}
+\contentsline {section}{\numberline {3.2}Zbuduj komponent\IeC {\'o}w}{4}
+\contentsline {chapter}{\numberline {4}Symulacje na komputerze}{5}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{6}

@@ -5,25 +5,44 @@
 \usepackage{graphicx}
 \graphicspath {images/} 
 \usepackage{listings}
+\usepackage{esvect}
+\usepackage{amsmath}
 
 \setlength{\parindent}{4ex} 
 
 \begin{document}
+%title
 \clearpage \include{title}
 
-\clearpage
-\chapter{Wprowadzenie i celem projektu}
+%category
+\tableofcontents
 
-\chapter{Koncepcja 'Social force'}
+\setlength{\baselineskip}{18pt}
+%chap 1 --- Wprowadzenie i celem projecktu
+\clearpage \include{chap1}
 
+%chap 2 concepts of Social Force
+\clearpage \include{chap2}
+
+%chap 3 formulations of model
+%\clearpage \include{chap3}
 \chapter{Formulacja modelu 'Social force'}
+\section{Zbuduj ogólne równanie}
+\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995}. My możemy uznać, że ruch pieszego można opisać za pomocą trzech różnych składników tak, że 
+$$f_{i}^{o}$$  \centerline{wewnętrzne przyspieszenie zachowanie, odzwierciedlając motywację pieszego} \centerline{do poruszania się w określonym kierunku z określoną prędkością.} 
+$$f_{i}^{wall}$$ \centerline{wpływ ścian korytarza na tego pieszego}
+$$f_{ij}$$ \centerline{efekty interakcji odzwierciedlające reakcję pieszych i do innego pieszego j.}
+\par \medskip W tym momencie, poznamy zmianą prędkości $v_{i}$ pieszego i coraz możemy wypisać ruch pieszego przez równanie
+$$
+\frac{dv_{i}}{dt} = f_{i}^{o} + f_{i}^{wall} + f_{ij}
+$$
+\section{Zbuduj komponentów}
+
 
 \chapter{Symulacje na komputerze}
 
 \chapter{Podsumowanie}
 
 \section*{Podziękowanie i referencja}
-
-\tableofcontents
 
 \end{document}
