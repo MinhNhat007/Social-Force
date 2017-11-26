@@ -1,0 +1,6 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Wprowadzenie i celem projektu}{1}
+\contentsline {chapter}{\numberline {2}Koncepcja 'Social force'}{2}
+\contentsline {chapter}{\numberline {3}Formulacja modelu 'Social force'}{3}
+\contentsline {chapter}{\numberline {4}Symulacje na komputerze}{4}
+\contentsline {chapter}{\numberline {5}Podsumowanie}{5}
