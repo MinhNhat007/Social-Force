@@ -1,17 +1,17 @@
-\chapter{Formulacja modelu 'Social force'}
-\section{Zbudowanie ogólne równanie}
-\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} my możemy uznać, że ruch pieszego można opisać za pomocą trzech różnych składników tak, że 
-$$f_{i}^{o}$$  \centerline{wewnętrzne przyspieszenie zachowanie, odzwierciedlając motywację pieszego} \centerline{do poruszania się w określonym kierunku z określoną prędkością.} 
+\chapter{Formułowanie modelu "Social force"}
+\section{Ogólne równanie}
+\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} możemy uznać, że ruch pieszego można opisać za pomocą trzech różnych składowych tak, że 
+$$f_{i}^{o}$$  \centerline{wewnętrzne zachowanie, odzwierciedlające motywację pieszego} \centerline{do poruszania się w określonym kierunku z określoną prędkością (wkierunku wyjścia)} 
 $$f_{i}^{wall}$$ \centerline{wpływ ścian korytarza na tego pieszego}
-$$f_{ij}$$ \centerline{efekty interakcji odzwierciedlające reakcję pieszych j do innego pieszego i.}
-\par \medskip W tym momencie, poznamy zmianą prędkości $v_{i}$ pieszego i coraz możemy wypisać takie równanie w formularze
+$$f_{ij}$$ \centerline{efekty oddziaływania pieszego j na pieszego i.}
+\par \medskip W tym momencie, poznamy zmianą prędkości $v_{i}$ pieszego i teraz możemy sformułować całościowe równanie
 $$
 \frac{dv_{i}}{dt} = f_{i}^{o} + f_{i}^{wall} + f_{ij}
 $$
-\section{Zbudowanie komponentów}
-\hspace{4ex}Łatwo widzimy, że wykorzystujemy dane eksperymentalne do sprawdzenia poprawności powyższego równania i określenia najważniejszej funkcji interakcji $f_{ij}$. Przejdźmy przez wszystkie komponenty.
+\section{Składowe siły 'Social Force'}
+\hspace{4ex}Łatwo zauważamy, że wykorzystujemy dane eksperymentalne do sprawdzenia poprawności powyższego równania i określenia najważniejszej funkcji interakcji $f_{ij}$. Przejdźmy przez wszystkie komponenty.
 \subsection{Zachowanie pojedynczego pieszego}
-\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} my mamy równanie dla wewnętrznego przyspieszenia zachowania $\vec{f_i^o}$:
+\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} otrzymujemy równanie dla wewnętrznego przyspieszenia $\vec{f_i^o}$:
 $$\vec{f_{i}^{o}} = \frac{v_i^oe_i^o-v_{i}(t)}{\tau}$$
 Gdy,\\ \centerline{$v_i^o = 1.29 \pm 0.19(ms^{-1})$ : pożądane prędkości}
 \centerline{$v_i(t) (ms^{-1})$ : aktualna prękość}
@@ -24,15 +24,15 @@ f_i^{wall}(d_w) = ae^{\frac{-d_w}{b}}
 $$
 Gdy, \\
 \centerline{$d_w (m)$ : odległość prostopadła z pieszego do ściany}
-\centerline{$a = 3$ i $b = 0.1$ : parametry odpowiadające do siły odpychania tego samego rzędu}
+\centerline{$a = 3$ i $b = 0.1$ : parametry odpowiadające siłom odpychania tego samego rzędu}
 \subsection{Interakcje międzyludzkie}
-\hspace{4ex}Również zgodnie z poprzednego badania poprzez {\it Johansson et al. 2007}, my też wiedzieliśmy, że interakcje międzyludzkie $f_{ij}$ mogą być definiować interakcje międzyludzkie jako funkcja odległości i kąta podejścia okazują się jasne i uzasadnione $f_{ij}(d,\theta)$ i mamy równanie dla tej funkcji
+\hspace{4ex}Również zgodnie z poprzednimi badaniami {\it Johansson et al. 2007}, wiemy, że interakcje międzyludzkie $f_{ij}$ mogą być definiowane jako funkcja odległości i kąta pomiędzy prostymi reprezentującymi kierunki ruchu pieszego i i j. podejścia okazują się jasne i uzasadnione $f_{ij}(d,\theta)$ Daje nam to równanie
 \newpage
 $$
 f_{ij}(d,\theta) = -Ae^{\frac{-d}{B}}(e^{-(n'B\theta)^2}t + e^{-(nB\theta)^2}n)
 $$
 Gdy,\\
-\centerline{$n_{ij}$ : zmiany kierunkowe jako wektor jednostkowy w lewym stronie $\vec{t_{ij}}$}
+\centerline{$n_{ij}$ : zmiany kierunkowe jako wektor jednostkowy w lewą stronę $\vec{t_{ij}}$}
 \centerline{$d(m)$ : odległość między dwoma pieszymi $i$'em i $j$'em}
 \centerline{$\theta(rad)$ : kąt między kierunkiem interakcji a wektorem skierowanym od pieszego $i$ do $j$}
 \centerline{$A = 4.5 \pm 0.3$}
@@ -40,12 +40,15 @@ Gdy,\\
 \centerline{$n = 3.0 \pm 0.7$}
 \centerline{$t_{ij} = \frac{\vec{D_{ij}}}{\Vert \vec{D_{ij}} \Vert}$ : kierunek interakcji}\\
 \par
-Przyjrzyjmy się bliżej parametrowi B: jest zwiększany w kierunku interakcji przez duże prędkości względne i jest zmniejszone gdy odpychanie w kierunku boków. Więc it depends on:
+Przyjrzyjmy się bliżej parametrowi B: jest zwiększany w kierunku interakcji przez duże prędkości względne i jest zmniejszone, gdy następuje odpychanie w kierunku boków. B zależy więc od:
 $$
 B = \gamma \Vert D \Vert
 $$
 Gdy,\\
-\centerline{$\gamma = 0.35 \pm 0.01$ : parameter równania}
+\centerline{$\gamma = 0.35 \pm 0.01$ : parametr równania}
 I mamy \\ \centerline{$\vec{D_{ij}} = \lambda(\vec{v_i} - \vec{v_j}) + \vec{e_{ij}}$}
 \centerline{$\lambda = 2.0 \pm 0.2$ : względne znaczenie dwóch kierunków}
-\centerline{$\vec{e_{ij}} = \frac{\vec{x_j}-\vec{x_i}}{\Vert \vec{x_j} - \vec{x_i} \Vert}$ : kierunek, w którym znajduje się pieszy $j$}
+\centerline{$\vec{e_{ij}} = \frac{\vec{x_j}-\vec{x_i}}{\Vert \vec{x_j} - \vec{x_i} \Vert}$ : kierunek, w którym porusza się pieszy $j$}
+
+
+Wykorzystaliśmy początkowo stałe wyznaczone w pracy Helbinga z 2009 roku, później poddamy je kalibracji na własnym modelu.
