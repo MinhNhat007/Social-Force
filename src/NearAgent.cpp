@@ -2,8 +2,8 @@
 
 NearAgent::NearAgent(Agent* sourceAgent, Agent* nearAgent)
 {
-    // TO DO
-    //distance = sourceAgent->getPosition()
+    Vector2 distanceVec = sourceAgent->getPosition() + nearAgent->getPosition();
+    distance = distanceVec.length();
     agent = nearAgent;
 }
 

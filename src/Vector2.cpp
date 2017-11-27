@@ -2,6 +2,8 @@
 
 Vector2::Vector2(void)
 {
+    X=0;
+    Y=0;
 }
 
 Vector2::Vector2(float X, float Y){
