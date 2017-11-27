@@ -5,25 +5,74 @@
 \usepackage{graphicx}
 \graphicspath {images/} 
 \usepackage{listings}
+\usepackage{esvect}
+\usepackage{amsmath}
 
 \setlength{\parindent}{4ex} 
 
 \begin{document}
+%title
 \clearpage \include{title}
 
-\clearpage
-\chapter{Wprowadzenie i celem projektu}
+%category
+\tableofcontents
 
-\chapter{Koncepcja 'Social force'}
+\setlength{\baselineskip}{18pt}
+%chap 1 --- Wprowadzenie i celem projecktu
+\clearpage \include{chap1}
 
+%chap 2 concepts of Social Force
+\clearpage \include{chap2}
+
+%chap 3 formulations of model
+%\clearpage \include{chap3}
 \chapter{Formulacja modelu 'Social force'}
+\section{Zbudowanie ogólne równanie}
+\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} my możemy uznać, że ruch pieszego można opisać za pomocą trzech różnych składników tak, że 
+$$f_{i}^{o}$$  \centerline{wewnętrzne przyspieszenie zachowanie, odzwierciedlając motywację pieszego} \centerline{do poruszania się w określonym kierunku z określoną prędkością.} 
+$$f_{i}^{wall}$$ \centerline{wpływ ścian korytarza na tego pieszego}
+$$f_{ij}$$ \centerline{efekty interakcji odzwierciedlające reakcję pieszych j do innego pieszego i.}
+\par \medskip W tym momencie, poznamy zmianą prędkości $v_{i}$ pieszego i coraz możemy wypisać takie równanie w formularze
+$$
+\frac{dv_{i}}{dt} = f_{i}^{o} + f_{i}^{wall} + f_{ij}
+$$
+\section{Zbudowanie komponentów}
+\hspace{4ex}Łatwo widzimy, że wykorzystujemy dane eksperymentalne do sprawdzenia poprawności powyższego równania i określenia najważniejszej funkcji interakcji $f_{ij}$. Przejdźmy przez wszystkie komponenty.
+\subsection{Zachowanie pojedynczego pieszego}
+\hspace{4ex}Zgodnie z koncepcją 'Social force' przez {\it Helbing \& Molnar 1995} my mamy równanie dla wewnętrznego przyspieszenia zachowania $\vec{f_i^o}$:
+$$\vec{f_{i}^{o}} = \frac{v_i^oe_i^o-v_{i}(t)}{\tau}$$
+Gdy,\\ \centerline{$v_i^o = 1.29 \pm 0.19(ms^{-1})$ : pożądane prędkości}
+\centerline{$v_i(t) (ms^{-1})$ : aktualna prękość}
+\centerline{$\tau = 0.54 \pm 0.05(s)$: czas relaksacji}
+\centerline{$e_i^o$: pożądany kierunek ruchu}
+\subsection{Wpływ ścian na tym pieszym}
+\hspace{4ex}Zgodnie z wcześniejszymi ustaleniami przez {\it Johansson et al. 2007} takie efekty ścian korytarzy na tym pieszym można opisać za pomocą równania:
+$$
+f_i^{wall}(d_w) = ae^{\frac{-d_w}{b}}
+$$
+Gdy, \\
+\centerline{$d_w (m)$ : odległość prostopadła z pieszego do ściany}
+\centerline{$a = 3$ i $b = 0.1$ : parametry odpowiadające do siły odpychania tego samego rzędu}
+\subsection{Interakcje międzyludzkie}
+\hspace{4ex}Również zgodnie z poprzednego badania poprzez {\it Johansson et al. 2007}, my też wiedzieliśmy, że interakcje międzyludzkie $f_{ij}$ mogą być definiować interakcje międzyludzkie jako funkcja odległości i kąta podejścia okazują się jasne i uzasadnione $f_{ij}(d,\theta)$ i mamy równanie dla tej funkcji
+\newpage
+$$
+f_{ij}(d,\theta) = -Ae^{\frac{-d}{B}}(e^{-(n'B\theta)^2}t + e^{-(nB\theta)^2}n)
+$$
+Gdy,\\
+\centerline{$d(m)$ : odległość między dwoma pieszymi $i$'em i $j$'em}
+\centerline{$\theta(rad)$ : kąt między kierunkiem interakcji a wektorem skierowanym od pieszego $i$ do $j$}
+\centerline{$A = 4.5 \pm 0.3$}
+\centerline{$n' = 2.0 \pm 0.1$}
+\centerline{$n = 3.0 \pm 0.7$}
+\centerline{$t_{ij}$ : kierunek interakcji}
+\centerline{$n_{ij}$ : zmiany kierunkowe}
+\centerline{$B = ???????????$}
 
 \chapter{Symulacje na komputerze}
 
 \chapter{Podsumowanie}
 
 \section*{Podziękowanie i referencja}
-
-\tableofcontents
 
 \end{document}
