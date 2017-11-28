@@ -17,7 +17,25 @@ void Agent::setVelocity(Vector2 velocity)
     this.velocity = velocity;
 }
 
+Vector2 Agent::computeVelocity()
+{
 
+}
+
+Vector2 Agent::computeDirVel()
+{
+
+}
+
+Vector2 Agent::computeObstaclesVel()
+{
+
+}
+
+Vector2 Agent::computeOtherAgentsVel()
+{
+
+}
 
 Vector2 Agent::getPosition()
 {
