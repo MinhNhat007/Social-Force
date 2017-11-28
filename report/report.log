@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.30)  28 NOV 2017 00:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.30)  28 NOV 2017 10:08
 entering extended mode
 **./report.tex
 (report.tex
@@ -684,20 +684,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--42
 
  []
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 W
-      ykorzystaliśmy początkowo stałe wyznaczone w pracy Helbinga z 2009 ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 ) [6]
 Rozdzia\l  4.
 [7
@@ -709,6 +695,12 @@ Rozdzia\l  5.
 
 ]
 Rozdzia\l  6.
+
+Overfull \hbox (25.9315pt too wide) in paragraph at lines 37--38
+[]\OT4/cmr/m/it/12 Experimental study of the be-ha-vio-ural me-cha-ni-sms un-de
+r-ly-ing self-organization
+ []
+
 [9
 
 ] (report.aux (title.aux) (chap1.aux) (chap2.aux) (chap3.aux)) ) 
@@ -736,7 +728,7 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Program Files
 ype1/public/pl/plsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 pl/plsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti12.pf
 b>
-Output written on report.pdf (10 pages, 112684 bytes).
+Output written on report.pdf (10 pages, 116145 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
