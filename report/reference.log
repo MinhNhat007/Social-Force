@@ -1,0 +1,1058 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.30)  28 NOV 2017 11:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**reference.tex
+(./reference.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+
+! LaTeX Error: Environment thebibliography undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}
+                           {1}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{thebibliography}{1
+                             }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \bibitem{1}
+               Helbing D., \textsl{Complex System}, Germany (1992).
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.3 \bibitem{1}
+               Helbing D., \textsl{Complex System}, Germany (1992).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.3 \bibitem{1}
+               Helbing D., \textsl{Complex System}, Germany (1992).
+I'm forgetting what you said and using zero instead.
+
+\bibcite{1}{0}
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/sl/10 Com-
+ []
+
+
+Overfull \hbox (18.0556pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/sl/10 plex
+ []
+
+
+Overfull \hbox (18.11115pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/sl/10 Sys-
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/sl/10 tem
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \bibitem{2}
+               Blue V., Adler J.,  \textsl{Bi-dirctional emergent fundamenta...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.5 \bibitem{2}
+               Blue V., Adler J.,  \textsl{Bi-dirctional emergent fundamenta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.5 \bibitem{2}
+               Blue V., Adler J.,  \textsl{Bi-dirctional emergent fundamenta...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{2}{0}
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no V in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (13.19447pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 Bi-
+ []
+
+
+Overfull \hbox (41.69455pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 dirctional
+ []
+
+
+Overfull \hbox (24.47224pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 emer-
+ []
+
+
+Overfull \hbox (18.61115pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 gent
+ []
+
+
+Overfull \hbox (17.50005pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 fun-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 da-
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 men-
+ []
+
+
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 tal
+ []
+
+
+Overfull \hbox (27.55559pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 pedes-
+ []
+
+
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 trian
+ []
+
+
+Overfull \hbox (21.44447pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 flows
+ []
+
+
+Overfull \hbox (20.30562pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 from
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 cel-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 lu-
+ []
+
+
+Overfull \hbox (11.69447pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 lar
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 au-
+ []
+
+
+Overfull \hbox (31.1112pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 tomata
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 mi-
+ []
+
+
+Overfull \hbox (31.75005pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 crosim-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 la-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/sl/10 tion
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \bibitem{3}
+               Burstedde C.K., Klauck K., Schadschneider A., Zittartz J., \t...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.7 \bibitem{3}
+               Burstedde C.K., Klauck K., Schadschneider A., Zittartz J., \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.7 \bibitem{3}
+               Burstedde C.K., Klauck K., Schadschneider A., Zittartz J., \t...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{3}{0}
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.00005pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 Sim-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 u-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 la-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 of
+ []
+
+
+Overfull \hbox (27.55559pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 pedes-
+ []
+
+
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 trian
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 dy-
+ []
+
+
+Overfull \hbox (22.22227pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 nam-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 ics
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 us-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 ing
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 a
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 2-
+ []
+
+
+Overfull \hbox (51.72235pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 dimensional
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 cel-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 lu-
+ []
+
+
+Overfull \hbox (11.69447pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 lar
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 au-
+ []
+
+
+Overfull \hbox (25.55562pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 toma-
+ []
+
+
+Overfull \hbox (14.44449pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/sl/10 ton
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \bibitem{4}
+               Dijkstra J., Jessurun A., Timmermans H., \textsl{A multi-agen...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.9 \bibitem{4}
+               Dijkstra J., Jessurun A., Timmermans H., \textsl{A multi-agen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.9 \bibitem{4}
+               Dijkstra J., Jessurun A., Timmermans H., \textsl{A multi-agen...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{4}{0}
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 A
+ []
+
+
+Overfull \hbox (26.38895pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 multi-
+ []
+
+
+Overfull \hbox (23.61116pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 agent
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 cel-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 lu-
+ []
+
+
+Overfull \hbox (11.69447pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 lar
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 au-
+ []
+
+
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 tot-
+ []
+
+
+Overfull \hbox (22.22229pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 mata
+ []
+
+
+Overfull \hbox (26.38896pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 model
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 of
+ []
+
+
+Overfull \hbox (27.55559pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 pedes-
+ []
+
+
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 trian
+ []
+
+
+Overfull \hbox (25.83337pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 move-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/sl/10 ment
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \bibitem{5}
+                Helbing D., Molnar P., \textsl{A social force model for pede...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.11 \bibitem{5}
+                Helbing D., Molnar P., \textsl{A social force model for pede...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.11 \bibitem{5}
+                Helbing D., Molnar P., \textsl{A social force model for pede...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{5}{0}
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 A
+ []
+
+
+Overfull \hbox (12.27779pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 so-
+ []
+
+
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 cial
+ []
+
+
+Overfull \hbox (20.86115pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 force
+ []
+
+
+Overfull \hbox (26.38896pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 model
+ []
+
+
+Overfull \hbox (11.97226pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 for
+ []
+
+
+Overfull \hbox (27.55559pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 pedes-
+ []
+
+
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 trian
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 dy-
+ []
+
+
+Overfull \hbox (22.22227pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 nam-
+ []
+
+
+Overfull \hbox (11.16667pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/sl/10 ics
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \bibitem{6}
+                Lohner R., \textsl{On modeling of pedestrian motion}, Applie...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.13 \bibitem{6}
+                Lohner R., \textsl{On modeling of pedestrian motion}, Applie...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.13 \bibitem{6}
+                Lohner R., \textsl{On modeling of pedestrian motion}, Applie...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{6}{0}
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 On
+ []
+
+
+Overfull \hbox (22.50006pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 mod-
+ []
+
+
+Overfull \hbox (10.55556pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 el-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 ing
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 of
+ []
+
+
+Overfull \hbox (27.55559pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 pedes-
+ []
+
+
+Overfull \hbox (21.13895pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 trian
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 mo-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/sl/10 tion
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \bibitem{7}
+                Pauls J., \textsl{Movement of people}, Washington (1994).
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.15 \bibitem{7}
+                Pauls J., \textsl{Movement of people}, Washington (1994).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.15 \bibitem{7}
+                Pauls J., \textsl{Movement of people}, Washington (1994).
+I'm forgetting what you said and using zero instead.
+
+\bibcite{7}{0}
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (26.6667pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/sl/10 Move-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/sl/10 ment
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/sl/10 of
+ []
+
+
+Overfull \hbox (18.61115pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/sl/10 peo-
+ []
+
+
+Overfull \hbox (12.7778pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/sl/10 ple
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{thebibliography}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \end{thebibliography}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> reference.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 11 strings out of 493029
+ 202 string characters out of 6136234
+ 56060 words of memory out of 5000000
+ 3646 multiletter control sequences out of 15000+600000
+ 3993 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,1n,10p,211b,84s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
