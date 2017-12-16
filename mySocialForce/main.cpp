@@ -13,12 +13,12 @@ GLsizei winWidth = 992;  // Window width (16:9 ratio)
 GLsizei winHeight = 558; // Window height (16:9 ratio)
 
 SocialForce socialForce;
-int numberOfAgent = 400;
 
 //functions declaration
 void init();
 void display();
 void drawWalls();
+void update();
 void normalKey(unsigned char key, int xMousePos, int yMousePos);
 
 //main function only implement GUI
@@ -30,12 +30,12 @@ int main(int argc, char **argv){
 	glutInitWindowPosition(90, 90);							   // Set window position
 	glutCreateWindow("Crowd Simulation using Social Force");   // Set window title and create display window
 	
-	init();
+	init(); //create agents and walls
 
 	glutDisplayFunc(display);
 	glutKeyboardFunc(normalKey);
+	glutIdleFunc(update);
 
-	glutMainLoop();
 	glutMainLoop(); // Enter GLUT's main loop
 
 	return 0;
@@ -49,27 +49,20 @@ void display()
 		glScalef(1.0, 1.0, 1.0);
 		drawWalls();
 	glPopMatrix();
-		//examples draw triangles
-		/*glPushMatrix();
-	glBegin(GL_TRIANGLES);
-		glVertex2f(-0.5, -0.5);
-		glVertex2f(0.5, 0);
-		glVertex2f(0, 0.5);
-	glEnd();
-	glPopMatrix();*/
 
 	glutSwapBuffers();
 }
 
 void init()
 {
+	int numberOfAgent = 400;
 	srand(1604010629); // Seed to generate random numbers
 	socialForce.createWalls();
 	socialForce.createAgents(numberOfAgent);
 }
 
 void drawWalls() {
-	vector<Wall> walls = socialForce.getWall();
+	vector<Wall> walls = socialForce.getWalls();
 	//glColor3f(0.2F, 0.2F, 0.2F);
 	glPushMatrix();
 		for (Wall tmpWall : walls) {
@@ -91,4 +84,15 @@ void normalKey(unsigned char key, int xMousePos, int yMousePos)
 			exit(0); // Terminate program
 			break;
 	}
+}
+
+void update(){
+	static int preTime = 0;
+	int frameTime, curTime;
+	
+	curTime = glutGet(GLUT_ELAPSED_TIME);
+	frameTime = curTime - preTime;
+	preTime = curTime;
+
+	socialForce.nextState(static_cast<float>(frameTime) / 1000);
 }

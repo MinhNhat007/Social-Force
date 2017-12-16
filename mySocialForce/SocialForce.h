@@ -15,8 +15,8 @@ using namespace std;
 class SocialForce{
     private:
         //vector wall
-        vector<Wall> myWall;    
-        vector<Agent> myAgent;
+        vector<Wall> myWalls;    
+        vector<Agent> myAgents;
     
     public:
         //constructor with out parameters
@@ -30,7 +30,7 @@ class SocialForce{
         //add a wall to vector wall
         void addWall(Wall);
         //get data from wall
-        vector<Wall> getWall();
+        vector<Wall> getWalls();
 
         ///
         //Method for agents----------------------
@@ -39,6 +39,11 @@ class SocialForce{
         void createAgents(int);
         //add agent to database
         void addAgent(Agent);
+        //make movement for agents for steptime
+        void nextState(float);
+        //get data from agemts
+        vector<Agent> getAgents();
+
 
     static float randomFloat(float lowerBound, float upperBound){
         return (lowerBound + (static_cast<float>(rand()) / RAND_MAX) * (upperBound - lowerBound));

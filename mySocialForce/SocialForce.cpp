@@ -1,7 +1,7 @@
 #include "SocialForce.h"
 SocialForce::SocialForce(){
-    myWall.clear();
-    myAgent.clear();
+    myWalls.clear();
+    myAgents.clear();
 }
 void SocialForce::createWalls(){
     // Upper Wall
@@ -32,11 +32,11 @@ void SocialForce::createWalls(){
 }
 
 void SocialForce::addWall(Wall tmp){
-    myWall.push_back(tmp);
+    myWalls.push_back(tmp);
 }
 
-vector<Wall> SocialForce::getWall(){
-    return myWall;
+vector<Wall> SocialForce::getWalls(){
+    return myWalls;
 }
 
 void SocialForce::createAgents(int quantity){
@@ -55,5 +55,16 @@ void SocialForce::createAgents(int quantity){
 }
 
 void SocialForce::addAgent(Agent tmp){
-    myAgent.push_back(tmp);
+    myAgents.push_back(tmp);
+}
+
+void SocialForce::nextState(float stepTime){
+    int numberOfAgent = myAgents.size();
+    for (int i = 0; i < numberOfAgent; i++)
+        myAgents[i].makeAMove(myWalls, myAgents, stepTime);
+        //int j = i + 1;
+}   
+
+vector<Agent> SocialForce::getAgents(){
+    return myAgents;
 }
