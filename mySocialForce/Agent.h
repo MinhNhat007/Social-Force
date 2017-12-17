@@ -6,36 +6,56 @@
 #include <iostream>
 #include "Point.h"
 #include "Wall.h"
-#include "vectorMath.h"
+#include "Vector2.h"
 using namespace std;
 
+//class agent involved with every processes of agent 
 class Agent{
     static int currentID; //current ID
-    private:
-        int id; //id
-        float radius; //r
-        float desiredSpeed; //v_o
-        float currentSpeed; //current v
-        Point posistion; //location at considering time
-        Point destination; //destination which the agent would like to go
-    
-    public: 
-        //constructor without parameters
-        Agent(Point, Point);
+    //attribute from
+    /*static float A = 4.5;
+    static float n_prim = 3.0;
+    static float n = 2.0;
+    static float gamma = 0.35;
+    static float lambda = 2.0;
+    static int a = 3;
+    static float b = 0.1;*/
 
-        //function indicates the move after stepTime
-        void makeAMove(vector<Wall>, vector<Agent>, float);
-        
-        //calculate Social Force
-        vectorMath wallInteractForce(vector<Wall>);
-        //find the point which is the nearest with the agent
-        Point getNearestPointFromWalls(vector<Wall>);
+  private:
+    int id;               //id
+    float radius;         //r
+    float desiredSpeed;   //v_o
+    float relaxationTime; //t: relaxation time
+    Point posistion;      //location at considering time
+    Point destination;    //destination which the agent would like to go
+    Vector2 currentSpeed; //current v
 
-            //set methods
-            void setID();
-        void setRadius();
-        void setDesiredSpeed();
-        void setPosition(Point);
-        void setDestination(Point);
+  public:
+    //constructor without parameters
+    Agent(Point, Point);
+
+    //function indicates the move after stepTime
+    void makeAMove(vector<Wall>, vector<Agent>, float);
+
+    //calculate Social Force
+    Vector2 wallInteractForce(vector<Wall>);
+    //calcualte interal force
+    Vector2 internalForce();
+    //calculate interaction force between agents
+    Vector2 agentInteractForce(vector<Agent>);
+
+    //find the point which is the nearest with the agent
+    Point getNearestPointFromWalls(vector<Wall>);
+
+    //set and get methods
+    void
+    setID();
+    void setRadius();
+    void setDesiredSpeed();
+    void setPosition(Point);
+    void setDestination(Point);
+    void setRelaxationTime();
+    Point getPosition();
+    Point getDestination();
 };
 #endif
