@@ -18,6 +18,17 @@ void Agent::makeAMove(vector<Wall> walls, vector<Agent> agents, float stepTime){
     Vector2 forceWithWall = wallInteractForce(walls);
     Vector2 forceByThemselfe = internalForce();
     Vector2 forceWithOthers = agentInteractForce(agents);
+
+    Vector2 tmpAcceleration = forceWithWall + forceByThemselfe;
+    acceleration = tmpAcceleration + forceWithOthers;
+
+    currentSpeed = currentSpeed + acceleration * stepTime;
+    if (currentSpeed.getLength() > desiredSpeed){
+        currentSpeed = currentSpeed.normalize();
+        currentSpeed = currentSpeed*desiredSpeed;
+    }
+
+    //posistion = posistion + currentSpeed * stepTime;
 }
 
 Vector2 Agent::agentInteractForce(vector<Agent> agents){

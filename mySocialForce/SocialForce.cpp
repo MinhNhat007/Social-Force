@@ -41,8 +41,8 @@ vector<Wall> SocialForce::getWalls(){
 
 void SocialForce::createAgents(int quantity){
     for (int i = 0; i < quantity; i++){
-        float tmpX = randomFloat(-20.3F, -5.0);
-        float tmpY = randomFloat(-5.0, 5.0);
+        float tmpX = randomFloat(-1.0, 1.0);
+        float tmpY = randomFloat(-1.0, 1.0);
         Point currentPoint(tmpX, tmpY);
 
         float tmpX1 = randomFloat(25.0, 30.0);
@@ -62,7 +62,6 @@ void SocialForce::nextState(float stepTime){
     int numberOfAgent = myAgents.size();
     for (int i = 0; i < numberOfAgent; i++)
         myAgents[i].makeAMove(myWalls, myAgents, stepTime);
-        //int j = i + 1;
 }   
 
 vector<Agent> SocialForce::getAgents(){

@@ -62,21 +62,21 @@ Vector2 Vector2::unitLeftOrientedVector(){
     return v.normalize();
 }
 
-Vector2 Vector2::operator+(Vector2 other){
-    return Vector2(this->getX() + other.getX(), this->getY() + other.getY());
+Vector2 Vector2::operator+(const Vector2& other){
+    return Vector2(this->X + other.X, this->Y + other.Y);
 }
 
-Vector2 Vector2::operator-(Vector2 other){
-    return Vector2(this->getX() - other.getX(), this->getY() - other.getY());
+Vector2 Vector2::operator-(const Vector2& other){
+    return Vector2(this->X - other.X, this->Y - other.Y);
 }
 
-Vector2 Vector2::operator*(float param){
-    return Vector2(this->getX() * param, this->getY() * param);
+Vector2 Vector2::operator*(const float& param){
+    return Vector2(this->X * param, this->Y * param);
 }
 
-Vector2 &Vector2::operator=(Vector2 other){
-    this->X = other.getX();
-    this->Y = other.getY();
+Vector2& Vector2::operator=(Vector2 other){
+    this->X = other.X;
+    this->Y = other.Y;
     return *this;
 }
 

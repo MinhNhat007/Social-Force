@@ -32,10 +32,9 @@ class Vector2{
         void setY(float Y);
     
         //operator
-        Vector2 operator+(Vector2 );
-        Vector2 operator-(Vector2 );
-        Vector2 operator*(float param);
-        Vector2 &operator=(Vector2 other);
-};
-
+        Vector2 operator+(const Vector2&);
+        Vector2 operator-(const Vector2&);
+        Vector2 operator*(const float&);
+        Vector2& operator=(Vector2 other);
+}; 
 #endif // VECTOR2_H

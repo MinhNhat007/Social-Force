@@ -18,6 +18,7 @@ SocialForce socialForce;
 void init();
 void display();
 void drawWalls();
+void drawAgents();
 void update();
 void normalKey(unsigned char key, int xMousePos, int yMousePos);
 
@@ -48,8 +49,10 @@ void display()
 	glPushMatrix();
 		glScalef(1.0, 1.0, 1.0);
 		drawWalls();
+		drawAgents();
 	glPopMatrix();
 
+	glFlush();
 	glutSwapBuffers();
 }
 
@@ -61,9 +64,27 @@ void init()
 	socialForce.createAgents(numberOfAgent);
 }
 
+void drawAgents(){
+	vector<Agent> agents = socialForce.getAgents();
+	//cout << agents.size() << endl;
+	glPushMatrix();
+		for (Agent tmpAgent: agents){
+			glColor3f(0.0f, 0.0f, 1.0f);
+			glPointSize(10.0f);
+		
+			glBegin(GL_POINTS);
+				Point tmpPoint = tmpAgent.getPosition();
+				cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
+				glVertex2f(tmpPoint.getX(), tmpPoint.getY());
+				//glVertex2f(0.0, 0.0);
+			glEnd();	
+		}
+	glPopMatrix();
+}
+
 void drawWalls() {
 	vector<Wall> walls = socialForce.getWalls();
-	//glColor3f(0.2F, 0.2F, 0.2F);
+	glColor3f(0.2F, 0.2F, 0.2F);
 	glPushMatrix();
 		for (Wall tmpWall : walls) {
 			glBegin(GL_LINES);

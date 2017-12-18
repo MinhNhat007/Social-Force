@@ -2,10 +2,11 @@
 #define POINT_H
 
 #include <math.h>
+#include "Vector2.h"
 //class Point
 //contains all methods involvesd with Point
 class Point{
-    private:
+    protected:
         float x, y;
     public:
         //constructor withou parameter
@@ -58,6 +59,21 @@ class Point{
                 return true;
             else
                 return false;
+        }
+
+        Point& operator=(Point other)
+        {
+            this->x = other.getX();
+            this->y = other.getY();
+
+            return *this;
+        }
+        Point operator+(Vector2 &other){
+            float _x, _y;
+            _x = this->x + other.getX();
+            _y = this->y + other.getY();
+
+            return Point(_x, _y);
         }
 
         //get/set methods
