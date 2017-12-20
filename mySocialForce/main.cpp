@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -21,6 +20,7 @@ void drawWalls();
 void drawAgents();
 void update();
 void normalKey(unsigned char key, int xMousePos, int yMousePos);
+void computeFPS();
 
 //main function only implement GUI
 int main(int argc, char **argv){
@@ -52,14 +52,15 @@ void display()
 		drawAgents();
 	glPopMatrix();
 
+	//showInformation();
+
 	glFlush();
 	glutSwapBuffers();
 }
 
 void init()
 {
-	int numberOfAgent = 400;
-	srand(1604010629); // Seed to generate random numbers
+	int numberOfAgent = 300;
 	socialForce.createWalls();
 	socialForce.createAgents(numberOfAgent);
 }
@@ -68,13 +69,14 @@ void drawAgents(){
 	vector<Agent> agents = socialForce.getAgents();
 	//cout << agents.size() << endl;
 	glPushMatrix();
-		for (Agent tmpAgent: agents){
+		for (Agent tmpAgent: agents)
+			if (tmpAgent.getID() != -1){
 			glColor3f(0.0f, 0.0f, 1.0f);
 			glPointSize(10.0f);
 		
 			glBegin(GL_POINTS);
 				Point tmpPoint = tmpAgent.getPosition();
-				cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
+				//cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
 				glVertex2f(tmpPoint.getX(), tmpPoint.getY());
 				//glVertex2f(0.0, 0.0);
 			glEnd();	
@@ -84,7 +86,7 @@ void drawAgents(){
 
 void drawWalls() {
 	vector<Wall> walls = socialForce.getWalls();
-	glColor3f(0.2F, 0.2F, 0.2F);
+	glColor3f(1.0, 0.0, 0.0);
 	glPushMatrix();
 		for (Wall tmpWall : walls) {
 			glBegin(GL_LINES);
@@ -115,5 +117,26 @@ void update(){
 	frameTime = curTime - preTime;
 	preTime = curTime;
 
-	socialForce.nextState(static_cast<float>(frameTime) / 1000);
+	socialForce.nextState(static_cast<float>(frameTime) / 2000);
+
+	computeFPS();
+	glutPostRedisplay();
+	glutIdleFunc(update);
+}
+
+void computeFPS() {
+	static int frameCount = 0;	// Stores number of frames
+	int currTime, frameTime;	// Store time in milliseconds
+	static int prevTime;		// Stores time in milliseconds
+
+	frameCount++;
+
+	currTime = glutGet(GLUT_ELAPSED_TIME);	// Get time in milliseconds since 'glutInit()' called
+	frameTime = currTime - prevTime;
+
+	if (frameTime > 1000) {
+		float fps = frameCount / (static_cast<float>(frameTime) / 1000);	// Compute the number of FPS
+		prevTime = currTime;
+		frameCount = 0;												// Reset number of frames
+	}
 }

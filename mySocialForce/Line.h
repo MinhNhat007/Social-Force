@@ -12,8 +12,7 @@ class Line{
 
   public:
     //constructor withou parameter
-    Line()
-    {
+    Line(){
         Point tmp(0, 0);
         setFirst(tmp);
         setSecond(tmp);

@@ -26,7 +26,7 @@ class Agent{
     float radius;         //r
     float desiredSpeed;   //v_o
     float relaxationTime; //t: relaxation time
-    Point posistion;      //location at considering time
+    Point position;      //location at considering time
     Point destination;    //destination which the agent would like to go
     Vector2 currentSpeed; //current v
 
@@ -46,10 +46,14 @@ class Agent{
 
     //find the point which is the nearest with the agent
     Point getNearestPointFromWalls(vector<Wall>);
+    //find Vector for disiredVector
+    Vector2 computeDesiredVector();
+
+    //check agent reach destination
+    bool isReachDestination();
 
     //set and get methods
-    void
-    setID();
+    void setID(int);
     void setRadius();
     void setDesiredSpeed();
     void setPosition(Point);
@@ -57,5 +61,6 @@ class Agent{
     void setRelaxationTime();
     Point getPosition();
     Point getDestination();
+    int getID();
 };
 #endif

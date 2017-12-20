@@ -43,10 +43,5 @@ class SocialForce{
         void nextState(float);
         //get data from agemts
         vector<Agent> getAgents();
-
-
-    static float randomFloat(float lowerBound, float upperBound){
-        return (lowerBound + (static_cast<float>(rand()) / RAND_MAX) * (upperBound - lowerBound));
-    }
 };
 #endif

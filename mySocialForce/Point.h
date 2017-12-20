@@ -2,7 +2,6 @@
 #define POINT_H
 
 #include <math.h>
-#include "Vector2.h"
 //class Point
 //contains all methods involvesd with Point
 class Point{
@@ -23,7 +22,7 @@ class Point{
             y = point.getY();
         }
         //get distance
-        float getDistance(Point point){
+        float getDistance(Point point, int coe){
             float tmpX = x - point.getX();
             tmpX = tmpX * tmpX;
             float tmpY = y - point.getY();
@@ -61,19 +60,12 @@ class Point{
                 return false;
         }
 
-        Point& operator=(Point other)
+        Point& operator=(const Point& other)
         {
-            this->x = other.getX();
-            this->y = other.getY();
+            this->x = other.x;
+            this->y = other.y;
 
             return *this;
-        }
-        Point operator+(Vector2 &other){
-            float _x, _y;
-            _x = this->x + other.getX();
-            _y = this->y + other.getY();
-
-            return Point(_x, _y);
         }
 
         //get/set methods
