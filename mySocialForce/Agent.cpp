@@ -21,7 +21,7 @@ void Agent::makeAMove(vector<Wall> walls, vector<Agent> agents, float stepTime){
     Vector2 forceByThemselfe = internalForce();
     Vector2 forceWithOthers = agentInteractForce(agents);
 
-    Vector2 tmpAcceleration = forceByThemselfe + forceWithWall * (1/1.5);
+    Vector2 tmpAcceleration = forceByThemselfe + forceWithWall;
     acceleration = tmpAcceleration + forceWithOthers;
 
     currentSpeed = currentSpeed + acceleration * stepTime;
