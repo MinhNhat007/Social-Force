@@ -20,7 +20,6 @@ void drawWalls();
 void drawAgents();
 void update();
 void normalKey(unsigned char key, int xMousePos, int yMousePos);
-void computeFPS();
 
 //main function only implement GUI
 int main(int argc, char **argv){
@@ -52,8 +51,6 @@ void display()
 		drawAgents();
 	glPopMatrix();
 
-	//showInformation();
-
 	glFlush();
 	glutSwapBuffers();
 }
@@ -67,7 +64,6 @@ void init()
 
 void drawAgents(){
 	vector<Agent> agents = socialForce.getAgents();
-	//cout << agents.size() << endl;
 	glPushMatrix();
 		for (Agent tmpAgent: agents)
 			if (tmpAgent.getID() != -1){
@@ -81,6 +77,9 @@ void drawAgents(){
 				//glVertex2f(0.0, 0.0);
 			glEnd();	
 		}
+		/*glBegin(GL_POINTS);
+			glVertex2f(0.52, 0);
+		glEnd();*/
 	glPopMatrix();
 }
 
@@ -119,24 +118,6 @@ void update(){
 
 	socialForce.nextState(static_cast<float>(frameTime) / 2000);
 
-	computeFPS();
 	glutPostRedisplay();
 	glutIdleFunc(update);
-}
-
-void computeFPS() {
-	static int frameCount = 0;	// Stores number of frames
-	int currTime, frameTime;	// Store time in milliseconds
-	static int prevTime;		// Stores time in milliseconds
-
-	frameCount++;
-
-	currTime = glutGet(GLUT_ELAPSED_TIME);	// Get time in milliseconds since 'glutInit()' called
-	frameTime = currTime - prevTime;
-
-	if (frameTime > 1000) {
-		float fps = frameCount / (static_cast<float>(frameTime) / 1000);	// Compute the number of FPS
-		prevTime = currTime;
-		frameCount = 0;												// Reset number of frames
-	}
 }

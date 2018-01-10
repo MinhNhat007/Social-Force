@@ -26,8 +26,8 @@ Vector2 Vector2::normalize(){
     float length = this->getLength();
 
     if (length != 0){
-        vector.X = X / length;
-        vector.Y = Y / length;
+        vector.X = this->X / length;
+        vector.Y = this->Y / length;
     }
 
     return vector;

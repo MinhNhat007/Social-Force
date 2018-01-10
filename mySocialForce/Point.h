@@ -60,8 +60,7 @@ class Point{
                 return false;
         }
 
-        Point& operator=(const Point& other)
-        {
+        Point& operator=(const Point& other){
             this->x = other.x;
             this->y = other.y;
 

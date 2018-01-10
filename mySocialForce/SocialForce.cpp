@@ -38,6 +38,13 @@ void SocialForce::createWalls(){
     Line line3(first3, second3);
     Wall wall3(line3);
     addWall(wall3);
+
+    // line thang dung
+    /*Point first4(-0.5, -0.7);
+    Point second4(-0.5, -0.1);
+    Line line4(first4, second4);
+    Wall wall4(line4);
+    addWall(wall4);*/
 }
 
 void SocialForce::addWall(Wall tmp){
@@ -55,7 +62,7 @@ void SocialForce::createAgents(int quantity){
 
         Point currentPoint(tmpX, tmpY);
 
-        float tmpX1 = 0.5;//randomFloat(0.0, 0.0);
+        float tmpX1 = 0.52;//randomFloat(0.0, 0.0);
         float tmpY1 = 0.0;//randomFloat(0.0, 0.0);
         Point destinationPoint(tmpX1, tmpY1);
 
