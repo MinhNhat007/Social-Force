@@ -1,0 +1,2 @@
+gcc -o a.out Agent.cpp main.cpp SocialForce.cpp Vector2.cpp -lglut -lGLU -lGL -lm
+g++ -std=c++11 main.cpp SocialForce.cpp Agent.cpp Vector2.cpp -lglut -lGLU -lGL

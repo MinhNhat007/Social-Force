@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -58,33 +57,35 @@ void display()
 
 void init()
 {
-	int numberOfAgent = 400;
-	srand(1604010629); // Seed to generate random numbers
+	int numberOfAgent = 300;
 	socialForce.createWalls();
 	socialForce.createAgents(numberOfAgent);
 }
 
 void drawAgents(){
 	vector<Agent> agents = socialForce.getAgents();
-	//cout << agents.size() << endl;
 	glPushMatrix();
-		for (Agent tmpAgent: agents){
+		for (Agent tmpAgent: agents)
+			if (tmpAgent.getID() != -1){
 			glColor3f(0.0f, 0.0f, 1.0f);
 			glPointSize(10.0f);
 		
 			glBegin(GL_POINTS);
 				Point tmpPoint = tmpAgent.getPosition();
-				cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
+				//cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
 				glVertex2f(tmpPoint.getX(), tmpPoint.getY());
 				//glVertex2f(0.0, 0.0);
 			glEnd();	
 		}
+		/*glBegin(GL_POINTS);
+			glVertex2f(0.52, 0);
+		glEnd();*/
 	glPopMatrix();
 }
 
 void drawWalls() {
 	vector<Wall> walls = socialForce.getWalls();
-	glColor3f(0.2F, 0.2F, 0.2F);
+	glColor3f(1.0, 0.0, 0.0);
 	glPushMatrix();
 		for (Wall tmpWall : walls) {
 			glBegin(GL_LINES);
@@ -115,5 +116,8 @@ void update(){
 	frameTime = curTime - preTime;
 	preTime = curTime;
 
-	socialForce.nextState(static_cast<float>(frameTime) / 1000);
+	socialForce.nextState(static_cast<float>(frameTime) / 2000);
+
+	glutPostRedisplay();
+	glutIdleFunc(update);
 }
