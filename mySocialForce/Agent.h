@@ -4,9 +4,11 @@
 #include <vector>
 #include <random>
 #include <iostream>
+#include <deque>
 #include "Point.h"
 #include "Wall.h"
 #include "Vector2.h"
+#include "WayPoint.h"
 using namespace std;
 
 //class agent involved with every processes of agent 
@@ -29,6 +31,7 @@ class Agent{
     Point position;      //location at considering time
     Point destination;    //destination which the agent would like to go
     Vector2 currentSpeed; //current v
+	deque<WayPoint> wayPoints;
 
   public:
     //constructor without parameters

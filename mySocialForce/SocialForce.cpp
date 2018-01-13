@@ -76,7 +76,7 @@ void SocialForce::addAgent(Agent tmp){
 }
 
 void SocialForce::nextState(float stepTime){
-    srand(static_cast<unsigned>(time(0)));
+    //srand(static_cast<unsigned>(time(0)));
     int numberOfAgent = myAgents.size();
     for (int i = 0; i < numberOfAgent; i++){
         if (myAgents[i].getID() != -1){
@@ -85,7 +85,7 @@ void SocialForce::nextState(float stepTime){
                 myAgents[i].setID(-1);
         }
     }
-}   
+}
 
 vector<Agent> SocialForce::getAgents(){
     return myAgents;

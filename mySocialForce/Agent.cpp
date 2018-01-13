@@ -87,7 +87,9 @@ Vector2 Agent::agentInteractForce(vector<Agent> agents){
 }
 
 Vector2 Agent::computeDesiredVector(){
-    Vector2 e_i(position, destination); 
+	
+
+    Vector2 e_i = 
     /*
         How to find way point   
     */

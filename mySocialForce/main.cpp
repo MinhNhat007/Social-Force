@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -23,13 +24,12 @@ void normalKey(unsigned char key, int xMousePos, int yMousePos);
 
 //main function only implement GUI
 int main(int argc, char **argv){
-
 	glutInit(&argc, argv);									   // Initialize GLUT
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH); // Set display mode  Default mode used
 	glutInitWindowSize(winWidth, winHeight);				   // Set window width and height
 	glutInitWindowPosition(90, 90);							   // Set window position
 	glutCreateWindow("Crowd Simulation using Social Force");   // Set window title and create display window
-	
+
 	init(); //create agents and walls
 
 	glutDisplayFunc(display);
@@ -69,13 +69,13 @@ void drawAgents(){
 			if (tmpAgent.getID() != -1){
 			glColor3f(0.0f, 0.0f, 1.0f);
 			glPointSize(10.0f);
-		
+
 			glBegin(GL_POINTS);
 				Point tmpPoint = tmpAgent.getPosition();
 				//cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
 				glVertex2f(tmpPoint.getX(), tmpPoint.getY());
 				//glVertex2f(0.0, 0.0);
-			glEnd();	
+			glEnd();
 		}
 		/*glBegin(GL_POINTS);
 			glVertex2f(0.52, 0);
@@ -111,7 +111,7 @@ void normalKey(unsigned char key, int xMousePos, int yMousePos)
 void update(){
 	static int preTime = 0;
 	int frameTime, curTime;
-	
+
 	curTime = glutGet(GLUT_ELAPSED_TIME);
 	frameTime = curTime - preTime;
 	preTime = curTime;
