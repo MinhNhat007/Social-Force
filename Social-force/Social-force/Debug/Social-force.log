@@ -1,0 +1,15 @@
+﻿  SocialForce.cpp
+e:\studia\v semestr\miss\social-force\mysocialforce\point.h(32): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(15): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(16): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(22): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(23): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(29): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(30): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(36): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(37): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(59): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(60): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(62): warning C4305: "argument": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\socialforce.cpp(63): warning C4305: "argument": obcięcie z "double" do "float"
+  Social-force.vcxproj -> E:\Studia\V semestr\MISS\Social-force\Social-force\Debug\Social-force.exe

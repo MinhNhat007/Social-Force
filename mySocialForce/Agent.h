@@ -29,13 +29,17 @@ class Agent{
     float desiredSpeed;   //v_o
     float relaxationTime; //t: relaxation time
     Point position;      //location at considering time
-    Point destination;    //destination which the agent would like to go
+    WayPoint* destination;    //destination which the agent would like to go
     Vector2 currentSpeed; //current v
-	deque<WayPoint> wayPoints;
+	deque<WayPoint*> wayPoints; //deque with waypoints
 
   public:
-    //constructor without parameters
-    Agent(Point, Point);
+    //constructor without parameters; without choosing destination point
+    Agent(Point);
+
+	//automatically adds destination point as first in deque
+	void addWayPoint(WayPoint*);
+	deque<WayPoint*> getWayPoints() { return wayPoints; }
 
     //function indicates the move after stepTime
     void makeAMove(vector<Wall>, vector<Agent>, float);
@@ -49,7 +53,10 @@ class Agent{
 
     //find the point which is the nearest with the agent
     Point getNearestPointFromWalls(vector<Wall>);
+
     //find Vector for disiredVector
+	//additionally manages agent's waypoints
+	//if reached, change waypoints
     Vector2 computeDesiredVector();
 
     //check agent reach destination
@@ -60,10 +67,9 @@ class Agent{
     void setRadius();
     void setDesiredSpeed();
     void setPosition(Point);
-    void setDestination(Point);
     void setRelaxationTime();
     Point getPosition();
-    Point getDestination();
+    WayPoint* getDestination();
     int getID();
 };
 #endif

@@ -56,17 +56,21 @@ vector<Wall> SocialForce::getWalls(){
 }
 
 void SocialForce::createAgents(int quantity){
+	WayPoint* w1 = new WayPoint(1, 0.52, 0.0, 0.05);
+	WayPoint* w2 = new WayPoint(2, 0.8, 0.5, 0.1);
     for (int i = 0; i < quantity; i++){
         float tmpX = randomFloat(-0.95F, 0.45);
         float tmpY = randomFloat(-0.65F, 0.65);
 
         Point currentPoint(tmpX, tmpY);
 
-        float tmpX1 = 0.52;//randomFloat(0.0, 0.0);
-        float tmpY1 = 0.0;//randomFloat(0.0, 0.0);
-        Point destinationPoint(tmpX1, tmpY1);
+        //float tmpX1 = 0.52;//randomFloat(0.0, 0.0);
+        //float tmpY1 = 0.0;//randomFloat(0.0, 0.0);
+        //Point destinationPoint(tmpX1, tmpY1);
 
-        Agent agent(currentPoint, destinationPoint);
+        Agent agent(currentPoint);
+		agent.addWayPoint(w1);
+		agent.addWayPoint(w2);
         addAgent(agent);
     }
 }

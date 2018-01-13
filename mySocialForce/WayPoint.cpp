@@ -1,19 +1,22 @@
 #include "WayPoint.h"
+#include <iostream>
 
-WayPoint::WayPoint(int id, float x, float y, int r) {
+using namespace std;
+
+WayPoint::WayPoint(int id, float x, float y, float r) {
 	this->id = id;
 	this->position = Point(x, y);
 	this->radius = r;
 }
 
-WayPoint::WayPoint(int id, Point p, int r) {
+WayPoint::WayPoint(int id, Point p, float r) {
 	this->id = id;
 	this->position = p;
 	this->radius = r;
 }
 
-Vector2 WayPoint::getForce(float posX, float posY, bool* isReached) {
-	Vector2 vec = Vector2(position, Point(posX, posY));
+Vector2 WayPoint::getForce(Point agentPos, bool* isReached) {
+	Vector2 vec = Vector2(agentPos, position);
 	float length = vec.getLength();
 
 	if (isReached != NULL) {
@@ -21,6 +24,7 @@ Vector2 WayPoint::getForce(float posX, float posY, bool* isReached) {
 			*isReached = true;
 		else
 			*isReached = false;
+		
 	}
 
 	return vec.normalize();

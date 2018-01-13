@@ -2,6 +2,7 @@
 #define POINT_H
 
 #include <math.h>
+
 //class Point
 //contains all methods involvesd with Point
 class Point{
@@ -66,6 +67,7 @@ class Point{
 
             return *this;
         }
+
 
         //get/set methods
         float getX() { return x; }

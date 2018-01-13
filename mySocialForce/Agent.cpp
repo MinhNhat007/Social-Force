@@ -6,14 +6,20 @@ using namespace std;
 int Agent::currentID = 0;
 float coefficient = 5.0;
 default_random_engine generator;
-Agent::Agent(Point position, Point destination){
+Agent::Agent(Point position){
     setID(0);
     setRadius();
     setDesiredSpeed();
     setPosition(position);
-    setDestination(destination);
     setRelaxationTime();
+
 }
+
+void Agent::addWayPoint(WayPoint* wp) {
+	wayPoints.push_back(wp);
+	destination = wayPoints.front();
+}
+
 
 void Agent::makeAMove(vector<Wall> walls, vector<Agent> agents, float stepTime){
     Vector2 acceleration;
@@ -30,8 +36,8 @@ void Agent::makeAMove(vector<Wall> walls, vector<Agent> agents, float stepTime){
         currentSpeed = currentSpeed*desiredSpeed;
     }
 
-    //cout << forceWithWall.getLength() << " " << forceByThemselfe.getLength() << " " 
-    //    << forceWithOthers.getLength() << endl;
+    cout << forceWithWall.getLength() << " " << forceByThemselfe.getLength() << " " 
+        << forceWithOthers.getLength() << endl;
     Vector2 tmpSpeed = currentSpeed * stepTime;
 
     float tmpX = this->position.getX() + tmpSpeed.getX()/coefficient;
@@ -54,7 +60,7 @@ Vector2 Agent::agentInteractForce(vector<Agent> agents){
             Vector2 distance_ij(agent.getPosition(), this->getPosition());
 
             float d = distance_ij.getLength();
-            if (d > 0.01)
+            if (d > 0.05)  //before was 0.01
                 continue;
 
             Vector2 e_ij = distance_ij.normalize();
@@ -86,17 +92,24 @@ Vector2 Agent::agentInteractForce(vector<Agent> agents){
     return f_ij;
 }
 
-Vector2 Agent::computeDesiredVector(){
-	
 
-    Vector2 e_i = 
-    /*
-        How to find way point   
-    */
-    /*
-     po 1s -> nowy punkt -> nowa linia -> czy bedzie spotkac
-    */
-    return e_i.normalize();
+Vector2 Agent::computeDesiredVector(){
+	bool isReached = false;
+	Vector2 e_i(0, 0);
+	if (destination != NULL) {
+		e_i = destination->getForce(position, &isReached);
+
+	}
+	if (isReached == true) {
+		wayPoints.pop_front();
+		if (!wayPoints.empty()) {
+			destination = wayPoints.front();
+		}
+		else destination = NULL;
+
+	}
+	
+    return e_i;
 }
 
 Vector2 Agent::internalForce(){
@@ -117,24 +130,45 @@ Vector2 Agent::internalForce(){
 }
 
 Vector2 Agent::wallInteractForce(vector<Wall> walls){
-    const int a = 3;
-    const float b = 0.1;
+    const int a = 1.3;
+    const float b = 0.8;
 
     Vector2 vectorInteractWithWall;
-    for (Wall wall: walls){
+    /*for (Wall wall: walls){
         Point tmpPoint = wall.getNearestPoint(this->getPosition());
         Vector2 tmpVector(this->getPosition(), tmpPoint);
         //if (tmpVector.getLength() > 1)
         //    continue;
         vectorInteractWithWall = vectorInteractWithWall + tmpVector;
-    }
-    float dw = vectorInteractWithWall.getLength();
-    while (dw - radius > 0){
-        dw = dw - radius;
-    }
+    }*/
+
+
+	//
+	float minDistance = INFINITY;
+	float dw = 0.0;
+	for (Wall wall : walls) {
+		Point tmpPoint = wall.getNearestPoint(this->getPosition());
+		Vector2 tmpVector(tmpPoint, this->getPosition());
+		dw = tmpVector.getLength();
+		if (dw < minDistance) {
+			minDistance = dw;
+			vectorInteractWithWall = tmpVector;
+		}
+		//if (tmpVector.getLength() > 1)
+		//    continue;
+		//vectorInteractWithWall = vectorInteractWithWall + tmpVector;
+	}
+	//
+	
+
+    //float dw = vectorInteractWithWall.getLength();
+    //while (dw - radius > 0){
+	minDistance = minDistance - radius;
+        //dw = dw - radius;
+   // }
     Vector2 vectorNomalization = vectorInteractWithWall.normalize();    
 
-    float forceInteractWithWalls = a*exp(-dw/b);
+    float forceInteractWithWalls = a*exp(-minDistance/b);
     return (vectorNomalization*forceInteractWithWalls);
 
 }
@@ -158,11 +192,10 @@ Vector2 Agent::wallInteractForce(vector<Wall> walls){
 }*/
 
 bool Agent::isReachDestination(){
-    Vector2 tmpVector(position, destination);
-    float tmpDistance = tmpVector.getLength();
-    if (abs(tmpDistance) < 0.05)
-        return true;
-    return false;
+	if (destination == NULL)
+		return true;
+	else
+		return false;
 }
 
 int Agent::getID(){
@@ -173,7 +206,7 @@ Point Agent::getPosition(){
     return position;
 }
 
-Point Agent::getDestination(){
+WayPoint* Agent::getDestination(){
     return destination;
 }
 
@@ -192,10 +225,6 @@ void Agent::setRadius(){
 
 void Agent::setPosition(Point tmp){
     position.copy(tmp);
-}
-
-void Agent::setDestination(Point tmp){
-    destination.copy(tmp);
 }
 
 void Agent::setRelaxationTime(){

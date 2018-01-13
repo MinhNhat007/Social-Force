@@ -57,7 +57,7 @@ void display()
 
 void init()
 {
-	int numberOfAgent = 300;
+	int numberOfAgent = 50;
 	socialForce.createWalls();
 	socialForce.createAgents(numberOfAgent);
 }
@@ -67,15 +67,15 @@ void drawAgents(){
 	glPushMatrix();
 		for (Agent tmpAgent: agents)
 			if (tmpAgent.getID() != -1){
-			glColor3f(0.0f, 0.0f, 1.0f);
-			glPointSize(10.0f);
+				glColor3f(0.0f, 0.0f, 1.0f);
+				glPointSize(10.0f);
 
-			glBegin(GL_POINTS);
-				Point tmpPoint = tmpAgent.getPosition();
-				//cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
-				glVertex2f(tmpPoint.getX(), tmpPoint.getY());
-				//glVertex2f(0.0, 0.0);
-			glEnd();
+				glBegin(GL_POINTS);
+					Point tmpPoint = tmpAgent.getPosition();
+					//cout << tmpPoint.getX() << " " << tmpPoint.getY() << endl;
+					glVertex2f(tmpPoint.getX(), tmpPoint.getY());
+					//glVertex2f(0.0, 0.0);
+				glEnd();
 		}
 		/*glBegin(GL_POINTS);
 			glVertex2f(0.52, 0);

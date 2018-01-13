@@ -15,6 +15,7 @@ Vector2::Vector2(Point first, Point second){
     Y = second.getY() - first.getY();
 }
 
+
 // Returns the length of the vector
 float Vector2::getLength(){
     return sqrt(X * X + Y * Y);

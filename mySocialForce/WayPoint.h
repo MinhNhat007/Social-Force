@@ -1,22 +1,23 @@
-#ifndef WALL_H
-#define WALL_H
+#ifndef WAYPOINT_H
+#define WAYPOINT_H
 
 #include "Point.h"
 #include "Vector2.h"
+#include "Point.h"
 
 class WayPoint
 {
 public:
-	WayPoint(int id, float x, float y, int radius);
-	WayPoint(int id, Point p, int radius);
+	WayPoint(int id, float x, float y, float radius);
+	WayPoint(int id, Point p, float radius);
 	~WayPoint() {};
 
-	Vector2 getForce(float posX, float posY, bool* isReached);
+	Vector2 getForce(Point agentPos, bool* isReached);
 
 protected:
 	int id;
 	Point position;
-	int radius;
+	float radius;
 };
 
 #endif
