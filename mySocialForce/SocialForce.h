@@ -43,5 +43,6 @@ class SocialForce{
         void nextState(float);
         //get data from agemts
         vector<Agent> getAgents();
+		static float SocialForce::randomFloat(float lowerBound, float upperBound);
 };
 #endif

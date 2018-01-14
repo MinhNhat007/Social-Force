@@ -6,6 +6,7 @@
 #include <iostream>
 #include <GL/glut.h>
 #include "SocialForce.h"
+#include "XMLInitializer.h"
 
 using namespace std;
 
@@ -24,14 +25,18 @@ void normalKey(unsigned char key, int xMousePos, int yMousePos);
 
 //main function only implement GUI
 int main(int argc, char **argv){
+	if (argc > 1)
+		socialForce = XMLInitializer::initSocialForce("argv[1]");
+	else
+		init(); //create example agents and walls
+
 	glutInit(&argc, argv);									   // Initialize GLUT
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH); // Set display mode  Default mode used
 	glutInitWindowSize(winWidth, winHeight);				   // Set window width and height
 	glutInitWindowPosition(90, 90);							   // Set window position
 	glutCreateWindow("Crowd Simulation using Social Force");   // Set window title and create display window
 
-	init(); //create agents and walls
-
+	
 	glutDisplayFunc(display);
 	glutKeyboardFunc(normalKey);
 	glutIdleFunc(update);

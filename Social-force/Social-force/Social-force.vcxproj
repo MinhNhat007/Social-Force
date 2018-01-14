@@ -121,6 +121,7 @@
     <ClCompile Include="..\..\mySocialForce\SocialForce.cpp" />
     <ClCompile Include="..\..\mySocialForce\Vector2.cpp" />
     <ClCompile Include="..\..\mySocialForce\WayPoint.cpp" />
+    <ClCompile Include="..\..\mySocialForce\XMLInitializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\mySocialForce\Agent.h" />
@@ -130,6 +131,7 @@
     <ClInclude Include="..\..\mySocialForce\Vector2.h" />
     <ClInclude Include="..\..\mySocialForce\Wall.h" />
     <ClInclude Include="..\..\mySocialForce\WayPoint.h" />
+    <ClInclude Include="..\..\mySocialForce\XMLInitializer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

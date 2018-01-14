@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-static float randomFloat(float lowerBound, float upperBound){
+float SocialForce::randomFloat(float lowerBound, float upperBound){
     return (lowerBound + (static_cast<float>(rand()) / RAND_MAX) * (upperBound - lowerBound));
 }
 
