@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
@@ -25,10 +24,8 @@ void normalKey(unsigned char key, int xMousePos, int yMousePos);
 
 //main function only implement GUI
 int main(int argc, char **argv){
-	if (argc > 1)
-		socialForce = XMLInitializer::initSocialForce("argv[1]");
-	else
-		init(); //create example agents and walls
+	if(argc>1)
+			socialForce = XMLInitializer::initSocialForce(argv[1]);
 
 	glutInit(&argc, argv);									   // Initialize GLUT
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH); // Set display mode  Default mode used
@@ -120,6 +117,7 @@ void update(){
 	curTime = glutGet(GLUT_ELAPSED_TIME);
 	frameTime = curTime - preTime;
 	preTime = curTime;
+
 
 	socialForce.nextState(static_cast<float>(frameTime) / 2000);
 

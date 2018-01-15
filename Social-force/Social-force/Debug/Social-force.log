@@ -1,2 +1,8 @@
 ﻿  main.cpp
+  Agent.cpp
+e:\studia\v semestr\miss\social-force\mysocialforce\agent.cpp(54): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\agent.cpp(133): warning C4244: "inicjowanie": konwersja z "double" do "int", możliwa utrata danych
+e:\studia\v semestr\miss\social-force\mysocialforce\agent.cpp(134): warning C4305: "inicjowanie": obcięcie z "double" do "float"
+e:\studia\v semestr\miss\social-force\mysocialforce\agent.cpp(223): warning C4305: "=": obcięcie z "double" do "float"
+  Generowanie kodu...
   Social-force.vcxproj -> E:\Studia\V semestr\MISS\Social-force\Social-force\Debug\Social-force.exe

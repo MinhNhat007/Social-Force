@@ -36,8 +36,8 @@ void Agent::makeAMove(vector<Wall> walls, vector<Agent> agents, float stepTime){
         currentSpeed = currentSpeed*desiredSpeed;
     }
 
-    //cout << forceWithWall.getLength() << " " << forceByThemselfe.getLength() << " " 
-    //    << forceWithOthers.getLength() << endl;
+    cout << forceWithWall.getLength() << " " << forceByThemselfe.getLength() << " " 
+       << forceWithOthers.getLength() << endl;
     Vector2 tmpSpeed = currentSpeed * stepTime;
 
     float tmpX = this->position.getX() + tmpSpeed.getX()/coefficient;
