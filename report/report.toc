@@ -1,11 +1,36 @@
 \select@language {polish}
-\contentsline {chapter}{\numberline {1}Wprowadzenie i cel projektu}{2}
-\contentsline {chapter}{\numberline {2}Koncepcja 'Social force'}{3}
-\contentsline {chapter}{\numberline {3}Formu\IeC {\l }owanie modelu 'Social force'}{4}
-\contentsline {section}{\numberline {3.1}Og\IeC {\'o}lne r\IeC {\'o}wnanie}{4}
-\contentsline {section}{\numberline {3.2}Sk\IeC {\l }adowe si\IeC {\l }y 'Social Force'}{5}
-\contentsline {subsection}{\numberline {3.2.1}Zachowanie pojedynczego pieszego}{5}
-\contentsline {subsection}{\numberline {3.2.2}Wp\IeC {\l }yw \IeC {\'s}cian na tym pieszym}{5}
-\contentsline {subsection}{\numberline {3.2.3}Interakcje mi\IeC {\k e}dzyludzkie}{5}
-\contentsline {chapter}{\numberline {4}Symulacja komputerowa}{7}
-\contentsline {chapter}{\numberline {5}Podsumowanie i Podzi\IeC {\k e}kowanie}{8}
+\contentsline {chapter}{\numberline {1}Wprowadzenie do tematu}{2}
+\contentsline {chapter}{\numberline {2}Proponowany model zjawiska}{3}
+\contentsline {section}{\numberline {2.1}Koncepcja \IeC {\textquoteright }Social force\IeC {\textquoteright } i cele modelu}{3}
+\contentsline {section}{\numberline {2.2}Formu\IeC {\l }owanie modelu 'Social force'}{4}
+\contentsline {subsection}{\numberline {2.2.1}Og\IeC {\'o}lne r\IeC {\'o}wnanie}{4}
+\contentsline {subsection}{\numberline {2.2.2}Sk\IeC {\l }adowe si\IeC {\l }y 'Social Force'}{4}
+\contentsline {subsubsection}{Zachowanie pojedynczego pieszego}{4}
+\contentsline {subsubsection}{Wp\IeC {\l }yw \IeC {\'s}cian na tym pieszym}{5}
+\contentsline {subsubsection}{Interakcje mi\IeC {\k e}dzyludzkie}{5}
+\contentsline {section}{\numberline {2.3}Diagramy}{6}
+\contentsline {subsection}{\numberline {2.3.1}Diagramy cykli dzia\IeC {\l }a\IeC {\'n}}{6}
+\contentsline {subsubsection}{Agent}{6}
+\contentsline {subsubsection}{Symulacja}{6}
+\contentsline {subsection}{\numberline {2.3.2}Diagramy przypadk\IeC {\'o}w u\IeC {\.z}ycia}{7}
+\contentsline {subsubsection}{Przypadki u\IeC {\.z}ycia systemu symulacji}{7}
+\contentsline {chapter}{\numberline {3}Symulacja komputerowa}{8}
+\contentsline {section}{\numberline {3.1}J\IeC {\k e}zyk i narz\IeC {\k e}dzia programowania}{8}
+\contentsline {section}{\numberline {3.2}Implementacja}{9}
+\contentsline {subsection}{\numberline {3.2.1}Implementacja modelu}{9}
+\contentsline {subsection}{\numberline {3.2.2}Interfejs u\IeC {\.z}ytkownika}{10}
+\contentsline {subsection}{\numberline {3.2.3}R\IeC {\'o}\IeC {\.z}nice implementacji w por\IeC {\'o}wnaniu z wersj\IeC {\k a} ksi\IeC {\k a}\IeC {\.z}kow\IeC {\k a}}{11}
+\contentsline {subsection}{\numberline {3.2.4}Inicjalizowanie sceny}{12}
+\contentsline {subsubsection}{Deklaracja waypoint'\IeC {\'o}w}{12}
+\contentsline {subsubsection}{Deklaracja agent\IeC {\'o}w}{12}
+\contentsline {subsubsection}{Deklaracja przeszk\IeC {\'o}d(\IeC {\'s}cian)}{13}
+\contentsline {subsubsection}{Przyk\IeC {\l }adowa deklaracja scenariusza}{13}
+\contentsline {section}{\numberline {3.3}Diagramy klas UML}{14}
+\contentsline {chapter}{\numberline {4}Wyniki symulacji}{15}
+\contentsline {section}{\numberline {4.1}Wyniki i statystyki}{15}
+\contentsline {section}{\numberline {4.2}Zastosowane procedury kalibracji i walidacji}{17}
+\contentsline {chapter}{\numberline {5}Wnioski}{18}
+\contentsline {section}{\numberline {5.1}Zebranie najwa\IeC {\.z}niejszych wniosk\IeC {\'o}w}{18}
+\contentsline {section}{\numberline {5.2}Zebranie najwa\IeC {\.z}niejszych wyzwa\IeC {\'n} i trudno\IeC {\'s}ci rozpatrywanego problemu}{18}
+\contentsline {section}{\numberline {5.3}Future Works}{19}
+\contentsline {chapter}{\numberline {6}Podzi\IeC {\k e}kowanie}{20}
