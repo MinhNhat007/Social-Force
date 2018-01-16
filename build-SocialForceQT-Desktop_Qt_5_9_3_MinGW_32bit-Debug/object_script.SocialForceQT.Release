@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\glwidget.o
+./release\Agent.o
+./release\SocialForce.o
+./release\Vector2.o
+./release\WayPoint.o
+./release\XMLInitializer.o
+./release\moc_mainwindow.o
+./release\moc_glwidget.o
+);

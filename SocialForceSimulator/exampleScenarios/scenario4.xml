@@ -1,0 +1,19 @@
+<scenario>
+  <waypoint id="1" x="-0.92" y="0" r="0.02" />
+  <waypoint id="2" x="0.92" y="0" r="0.02" />
+  
+  <agent x="-0.7" y="0" n="100" dx="0.2" dy="0.4">
+    <addwaypoint id="2" />
+  </agent>
+  <agent x="0.7" y="0" n="100" dx="0.2" dy="0.4">
+    <addwaypoint id="1" />
+  </agent>
+  
+  <obstacle x1="-0.9" y1="-0.9" x2="-0.9" y2="-0.03" />
+  <obstacle x1="-0.9" y1="0.03" x2="-0.9" y2="0.9" />
+  <obstacle x1="-0.9" y1="-0.9" x2="0.9" y2="-0.9" />
+  <obstacle x1="-0.9" y1="0.9" x2="0.9" y2="0.9" />
+  <obstacle x1="0.9" y1="-0.9" x2="0.9" y2="-0.03" />
+  <obstacle x1="0.9" y1="0.03" x2="0.9" y2="0.9" />	
+
+</scenario>

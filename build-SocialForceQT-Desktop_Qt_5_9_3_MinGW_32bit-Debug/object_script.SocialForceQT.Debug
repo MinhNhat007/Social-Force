@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\glwidget.o
+./debug\Agent.o
+./debug\SocialForce.o
+./debug\Vector2.o
+./debug\WayPoint.o
+./debug\XMLInitializer.o
+./debug\moc_mainwindow.o
+./debug\moc_glwidget.o
+);
